@@ -137,7 +137,7 @@ if [ "$caseNumber" = "B" ] || [ "$caseNumber" = "b" ]
 					then
 						echo "Please enter the exact path to the user's backup folder (Case sensitive): "
 						echo "I think your data is stored at:"
-						find /Users -name "20*-*-*_RITM*"
+						find /Users -name "20*-*-*_*"
 						read dataPath
 						user=$(logname)
 						chown -R $user $dataPath
